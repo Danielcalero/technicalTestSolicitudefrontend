@@ -75,7 +75,6 @@ export default function SolicitudForm({ newSolicitud, setNewSolicitud, handleAdd
             <tr>
               <th style={{ border: "1px solid #ddd", padding: "2px" ,fontSize:"15px"}}>Número</th>
               <th style={{ border: "1px solid #ddd", padding: "2px" ,fontSize:"15px"}}>Nombre</th>
-              <th style={{ border: "1px solid #ddd", padding: "2px" ,fontSize:"15px"}}>Acción</th>
             </tr>
           </thead>
           <tbody>
@@ -83,11 +82,6 @@ export default function SolicitudForm({ newSolicitud, setNewSolicitud, handleAdd
               <tr key={index}>
                 <td style={{ border: "1px solid #ddd", padding: "2px" ,fontSize:"15px"}}>{c.contactNumber}</td>
                 <td style={{ border: "1px solid #ddd", padding: "2px" ,fontSize:"15px"}}>{c.contactName}</td>
-                <td style={{ border: "1px solid #ddd", padding: "2px" ,fontSize:"15px"}}>
-                  <button onClick={() => handleDeleteContact(index)} style={{ backgroundColor: "red", color: "white", border: "none", padding: "5px 10px", cursor: "pointer",fontSize:"10px" }}>
-                    x
-                  </button>
-                </td>
               </tr>
             ))}
           </tbody>
